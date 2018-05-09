@@ -1,6 +1,6 @@
 const chai = require('chai');
-const { UrlParser } = require('../build/url_parser');
-const { urlParse } = require('../build/parser_functions');
+const { UrlParser } = require('../build/parser/url_parser');
+const { urlParse } = require('../build/parser/parser_functions');
 const expect = chai.expect;
 
 describe('URL Parser Exercise', function () {
