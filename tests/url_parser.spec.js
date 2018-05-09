@@ -1,10 +1,11 @@
 const chai = require('chai');
-const { urlParse, UrlParser } = require('../build/url_parser');
+const { UrlParser } = require('../build/url_parser');
+const { urlParse } = require('../build/parser_functions');
 const expect = chai.expect;
 
 describe('URL Parser Exercise', function () {
 
-    describe('Getting described parameters', () => {
+    describe('Using urlParse function', () => {
         it('complains the basic example', () => {
             const result = urlParse("/:version/api/:collection/:id", "/6/api/listings/3?sort=desc&limit=10");
             expect(result).to.deep.equal(
