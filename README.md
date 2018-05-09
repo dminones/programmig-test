@@ -1,8 +1,13 @@
 # Solución a ejercicios propuestos
 
+Install dependencies
+
 ````
 npm install
 ````
 
+Run tests
 
-## URL Parser
+````
+npm run test
+````
