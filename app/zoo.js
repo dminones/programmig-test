@@ -1,3 +1,8 @@
+/**
+ * Base class Animal, implements speak using animalSound method to intersect. Each animal should implement his own method to have a particular sound
+ * @class Animal
+ */
+
 class Animal {
 
     animalSound() {
@@ -11,12 +16,18 @@ class Animal {
     }
 }
 
+/**
+ * @class Tiger
+ */
 export class Tiger extends Animal {
     animalSound() {
         return 'grrr';
     };
 }
 
+/**
+ * @class Lion
+ */
 export class Lion extends Animal {
     animalSound() {
         return 'roar';
