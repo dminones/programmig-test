@@ -11,3 +11,9 @@ Run tests
 ````
 npm run test
 ````
+
+## Zoo Exercise
+Tests in /tests/url_parser.spec.js show how to use urlParse function.
+
+## Zoo Exercise
+Tests in /tests/zoo.spec.js show how to use Zoo clases to speak
