@@ -6,7 +6,7 @@ class Animal {
 
     speak(toSpeak) {
         return toSpeak.trim().split(/[ ]+/).reduce((acc, curr, index) =>
-            acc + (index ? ' ' : '') + curr + ' ' + this.animalSound()
+            acc + (index!==0 ? ' ' : '') + curr + ' ' + this.animalSound()
             , '');
     }
 }
