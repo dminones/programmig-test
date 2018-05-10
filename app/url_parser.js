@@ -2,7 +2,7 @@
  * getValue as number if posible, if not returns value as is
  * @param {String} value to be converted to number
  */
-export function getValue(value) {
+function getValue(value) {
     const converted = Number(value);
     if (!Number.isNaN(converted)) {
         return converted;
@@ -15,7 +15,7 @@ export function getValue(value) {
  * Query params string to key:value object
  * @param {String} params to be converted to key:value object
 **/
-export function parseParams(params) {
+function parseParams(params) {
     if (!params) return {}
 
     return params.split('&').reduce((acc, curr) => {
@@ -29,7 +29,7 @@ export function parseParams(params) {
  *  @param {Array} f to be used as url format
  *  @param {Array} i to be converted to key:value object using format
 **/
-export function parseComponents(f, i) {
+function parseComponents(f, i) {
     const format = f.split('/').filter(i => i);
     const instance = i.split('/').filter(i => i);
 
