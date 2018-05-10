@@ -1,5 +1,6 @@
 /**
- * Base class Animal, implements speak using animalSound method to intersect. Each animal should implement his own method to have a particular sound
+ * Base class Animal, implements speak using animalSound method to intersect. 
+ * Each animal should implement his own method to have a particular sound
  * @class Animal
  */
 
